@@ -5,8 +5,22 @@
 }
 
 body{
-    background-color: #1d3557;
+    
+    background-color: #1D1A3B;
 }
+p{
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin: 10px;
+
+}
+
+h3{
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+
 
 #container section{
     display: flex;
@@ -24,7 +38,7 @@ body{
     transition: 0.3ms;
 }
 #container section h2{
-    color: aliceblue;
+    color: #6672FF;
     text-align: center;
     margin-top: 0.8em;
     font-size: 2em;
@@ -61,3 +75,56 @@ body{
 #icons img:hover{
     opacity: 0.8;
 }
+
+/*----------FIM-HEADER-------*/
+
+/*----------ABOUT-------*/
+#about,#skills{
+    padding: 8px;
+}
+
+
+/*----------SKILLS -------*/
+
+#skills{
+    display: flex;
+    
+}
+
+#btns{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.btn-pink,.btn-purple,.btn-red{
+    height: 40px;
+    width: 100px;
+    font-size: 1rem;
+    border-radius: 15px;
+    border: 0;
+    margin: 8px;
+    font-weight: bold;
+    color: #ffffff;
+    
+
+
+
+}
+
+.btn-pink{
+    background-color: #f90091c7 ;
+}
+
+.btn-purple{
+    background-color:#6672FF;
+}
+.btn-red{
+    background-color: #52489C;
+    
+}
+
+
+
+
+
