@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+
     
 }
 
@@ -20,7 +21,32 @@ h3{
     font-size: 0.9rem;
 }
 
+/*----------HEADER------------*/
+header{
+    display: flex;
+    justify-content: space-between;
+}
+header button{
+    border-radius: 50%;
+    border: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #52489C;
+    margin-top: 25px;
+    margin-right: 15px;
+    cursor: pointer;
+}
 
+
+header i{
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+
+
+
+/*---------------------------*/
 
 #container section{
     display: flex;
@@ -37,7 +63,7 @@ h3{
     opacity: 0.8;
     transition: 0.3ms;
 }
-#container section h2{
+ h2{
     color: #6672FF;
     text-align: center;
     margin-top: 0.8em;
@@ -81,6 +107,7 @@ h3{
 /*----------ABOUT-------*/
 #about,#skills{
     padding: 8px;
+
 }
 
 
@@ -88,6 +115,7 @@ h3{
 
 #skills{
     display: flex;
+    margin: 4px;
     
 }
 
@@ -122,6 +150,50 @@ h3{
 .btn-red{
     background-color: #52489C;
     
+}
+
+/*------------Projetos------------*/
+
+#projetos{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards{
+    width: 330px;
+    height: 230px;
+    border-radius: 10px;
+    background-color: #4b3fa7;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+
+}
+.cards button a{
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+.cards img{
+    height: 150px;
+    width: 200px;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 
