@@ -4,23 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./favicon.ico" />
     <script src="https://kit.fontawesome.com/2316327b96.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    
     <title>BrunoFarias</title>
 </head>
 <body>
     <main id="container">
 
-        <header>
+        <div id="menuMb">
+            <button id="buttonmb" onclick="StartMenu()">X</button>
+
+            <ul>
+                <li><a href="#about" onclick="StartMenu()">Sobre</a></li>
+                <li><a href="#skills" onclick="StartMenu()">Skills</a></li>
+                <li><a href="#projetos" onclick="StartMenu()">Projetos</a></li>
+               
+            </ul>
+
+            
+
+        </div>
+        <header id="menutop">
             <h1 id="logo">BF</h1>
-            <button><i class="fas fa-bars"></i></button>
+            <ul id="btn-dsk">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projetos" >Projetos</a></li>
+                
+            </ul>
+            <button  onclick="StartMenu()" id="btn-menu"><i class="fas fa-bars"></i></button>
            
         </header>
-        <section>
-            <img src="src/344.jpg" alt="BrunoFarias">
+        <section >
+            <img class="img_redonda" src="src/344.jpg" alt="BrunoFarias">
             <h2>Bruno Farias</h2>
             <h3>Front-End Developer</h3>
-            
         </section>
        
             <div id="icons">
@@ -31,62 +51,86 @@
             </div>
 
 
-            <section id="about">
-                <h2>About Me</h2>
-                <p>Desenvolvedor com alguns anos de experiência desenvolvendo aplicações com PHP e Lumen Framework (Laravel). No tempo livre, livestreamer pela Twitch.tv com conteúdo sobre programação e criador/mentor do projeto He4rt Developers. </p>
+            <section id="about" id="secoes">
+               
+                <h2>Sobre</h2>
+                <img class="img_redonda" src="src/undraw_code_review_l1q9.svg" alt="Sobre Svg" >
+                <p>Desenvolvedor Web com foco no FrontEnd , apaixonado por tecnologia amante de JavaScript atualmente aprendendo ReactJs e Vuejs<br> </p>
 
 
             </section>
 
-            <section id="skills">
+            <section id="skills" >
                 <h2>Skills</h2>
+                <img id="imgSkill" src="src/undraw_static_assets_rpm6.svg" alt="JavaScript Html CSS lOGO">
 
-                <p>Desenvolvedor com alguns anos de experiência desenvolvendo aplicações com PHP e Lumen Framework (Laravel). No tempo livre, livestreamer pela Twitch.tv com conteúdo sobre programação e criador/mentor do projeto He4rt Developers. </p>
                 <div id="btns">
-                    <button class="btn-purple">JavaScript</button>
-                    <button class="btn-pink">Bootstrap 4</button>
-                    <button class="btn-red">Linux</button>
-                    <button class="btn-pink">ReactJS</button>
-                    <button class="btn-red">NextJS</button>
-                    <button class="btn-purple">VueJS</button>
 
+                    <button class="btn-red">JavaScript</button>
+                    <button class="btn-red">Bootstrap 4</button>
+                    <button class="btn-red">Vuejs</button>
+                    <button class="btn-red">ReactJS</button>
+                 
                 </div>
              
             </section>
 
-            <div id="projetos">
-                <h2>Projetos</h2>
-                <div id="card">
-                    <div class="cards">
-                        <img src="src/loginpage.jpg" alt="">
-                        <button class="btn-pink"><a href="#">Ver Projeto</a></button>
-
+           
+       
+        <div id="projetos" >
+            <h2>Projetos</h2>
+           
+            <div id="card">
+                
+                  
+                <div class="cards">
+                    <img id="imgspotify" src="src/spotify.png" alt="">
+                    <div id="btnscard">
+                        <button id="btnlogin" class="btn-pink"><a href="https://zealous-lichterman-fb968b.netlify.app">Ver Projeto</a></button>
+                            <a href="https://github.com/brunofariasdev/LayoutLogin">
+                                <img src="src/giticone.png" alt="Git Icone">
+                            </a>
                     </div>
-                    <div class="cards">
-                        <img src="src/loginpage.jpg" alt="">
-                        <button class="btn-purple"><a href="#">Ver Projeto</a></button>
-
-                    </div>
-                    <div class="cards">
-                        <img src="src/loginpage.jpg" alt="">
-                        <button class="btn-pink"><a href="#">Ver Projeto</a></button>
-
-                    </div>
-                    <div class="cards">
-                        <img src="src/loginpage.jpg" alt="">
-                        <button class="btn-purple"><a href="#">Ver Projeto</a></button>
-
-                    </div>
+                    
                 </div>
-            
+                
+                <div class="cards">
+                    <img id="imgspotify" src="src/todo.png" alt="">
+                    <div id="btnscard">
+                        <button id="btnlogin" class="btn-pink"><a href="https://sharp-wiles-528463.netlify.app/">Ver Projeto</a></button>
+                            <a href="https://github.com/brunofariasdev/AppTodoJs">
+                                <img src="src/giticone.png" alt="Git Icone">
+                            </a>
+                    </div>
+                    
+                </div>
+
+                <div class="cards">
+                    <img id="imgspotify" src="src/matamosquito.png" alt="">
+                    <div id="btnscard">
+                        <button id="btnlogin" class="btn-pink"><a href="https://awesome-sammet-8bfffc.netlify.app/">Ver Projeto</a></button>
+                            <a href="https://github.com/brunofariasdev/MataMosquito">
+                                <img src="src/giticone.png" alt="Git Icone">
+                            </a>
+                    </div>
+                    
+                </div>
+
+                
             </div>
 
            
+            
+        </div>
+           
 
-        
+        <footer>
+            BrunoFarias © Copyright - Todos os direitos reservados
+        </footer>
 
 
     </main>
-    
+        
+    <script src="script/index.js"></script>
 </body>
 </html>

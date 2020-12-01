@@ -1,12 +1,15 @@
+
 *{
     margin: 0px;
     padding: 0px;
-
-    
+   
 }
 
+
 body{
-    
+
+    display: flex;
+    flex-direction: column;
     background-color: #1D1A3B;
 }
 p{
@@ -20,6 +23,7 @@ h3{
     color: #ffffff;
     font-size: 0.9rem;
 }
+
 
 /*----------HEADER------------*/
 header{
@@ -35,8 +39,49 @@ header button{
     margin-top: 25px;
     margin-right: 15px;
     cursor: pointer;
+    display: none;
 }
 
+@media (max-width: 1024px) 
+{
+  header button {
+      display: block;
+
+  }
+}
+
+@media (max-width: 1024px) 
+{
+    #btn-dsk{
+        display: none !important;
+    }
+}
+
+#btn-dsk{
+    display: flex;
+    align-items: center;
+    margin: 0.4rem;
+
+}
+
+#btn-dsk li{
+    padding: .7rem;
+    list-style: none;
+    
+    
+    
+}
+
+#btn-dsk li a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#btn-dsk li a:hover{
+    opacity: .6;
+}
 
 header i{
     font-size: 2rem;
@@ -44,7 +89,13 @@ header i{
 }
 
 
-
+#container{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
+   
+}
 
 /*---------------------------*/
 
@@ -54,9 +105,10 @@ header i{
     flex-direction: column;
     align-items: center;
     margin-top: 4em;
+    overflow-x: hidden;
 }
 
-#container section img{
+.img_redonda{
     width: 13em;
     height: 13em;
     border-radius: 50%;
@@ -90,8 +142,8 @@ header i{
     margin-top: 5em;
 }
 #icons img{
-    height: 2.5em;
-    width: 2.5em;
+    height: 2.7em;
+    width: 2.7em;
     padding: 1.1em;
     cursor: pointer;
     transition: 0.10;
@@ -118,6 +170,12 @@ header i{
     margin: 4px;
     
 }
+#imgSkill{
+    height: 210px;
+    width: 260px;
+    border-radius: 3px;
+    margin: 20px 0px; 
+}
 
 #btns{
    display: flex;
@@ -136,32 +194,27 @@ header i{
     color: #ffffff;
     
 
-
-
 }
 
-.btn-pink{
-    background-color: #f90091c7 ;
-}
-
-.btn-purple{
-    background-color:#6672FF;
-}
-.btn-red{
+.btn-pink, .btn-red{
     background-color: #52489C;
     
+}
+
+.btn-white{
+    background-color: #ffffff;
 }
 
 /*------------Projetos------------*/
 
 #projetos{
     width: 100%;
-    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    margin-bottom: 1rem;
 }
+
 
 #card{
     display: flex;
@@ -174,8 +227,8 @@ header i{
     width: 330px;
     height: 230px;
     border-radius: 10px;
-    background-color: #4b3fa7;
-    margin: 10px;
+    background-color: #383651;
+    margin: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -189,12 +242,133 @@ header i{
     
 }
 
-.cards img{
-    height: 150px;
-    width: 200px;
-    border-radius: 10px;
-    margin: 10px;
+#imgcard{
+   height: 100px;
+   padding: 10px 0px;
+   
 }
+
+#imgcard button{
+    display: none;
+}
+#imgspotify{
+   height: 160px;
+   box-sizing: border-box;
+   padding: 15px 0px 0px 0px;
+}
+#btnscard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+}
+#btnscard img{
+    height: 60px;
+    width: 70px;
+    margin-left: 14px;
+
+}
+
+
+
+
+/*----------Menu-Mb -------*/
+
+#menuMb{
+    height: 100vh;
+    position: relative;
+    background-color: #ffffff;
+    width: 30%;
+    display: flex;
+    left: 70%;
+    flex-direction: row;
+    display: none;
+    animation-duration: 1.3s;
+    animation-name: slidein;
+    margin: 0;
+    
+}
+@keyframes slidein {
+  from {
+    left: 100%;
+   
+  }
+
+  to {
+    left: 70%;
+    
+  }
+}
+#menuMb ul{
+   margin: 120px 10px 10px 30px;
+   
+
+}
+
+#menuMb ul li{
+    list-style: none;
+    text-decoration: none;
+    padding: 10px 0px;
+    font-size: 2rem; 
+    
+}
+
+#menuMb ul li a{
+    text-decoration: none;
+    color: #383651;
+    font-weight: 550;
+    
+     
+}
+
+#menuMb ul li img{
+    height: 180px;
+    width: 150px;
+}
+    
+#buttonmb{
+    height: 60px;
+    width: 60px;
+    margin-top: 8px;
+    margin-left: 73%;
+    background-color: #383651;
+    border: 0;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 500;
+    overflow-y: hidden;
+}
+
+#menuMb li h1{
+    color: #383651;
+    border: 3px solid #383651;
+    font-size: 4.3rem;
+    border-radius: 60%;
+    padding: 15px;
+    text-align: center;
+    height: 90px;
+
+}
+
+#icongit{
+    height: 80px;
+
+}
+
+footer{
+    width: 100%;
+    height: 6rem;
+    background-color: #221f49;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    
+    
+}
+
 
 
 
