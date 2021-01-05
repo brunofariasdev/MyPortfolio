@@ -271,16 +271,15 @@ header i{
 
 
 
-
 /*----------Menu-Mb -------*/
 
 #menuMb{
     height: 100vh;
     position: relative;
     background-color: #ffffff;
-    width: 30%;
+    width: 70%;
     display: flex;
-    left: 70%;
+    left: 40%;
     flex-direction: row;
     display: none;
     animation-duration: 1.3s;
@@ -295,12 +294,12 @@ header i{
   }
 
   to {
-    left: 70%;
+    left: 40%;
     
   }
 }
 #menuMb ul{
-   margin: 120px 10px 10px 30px;
+   margin: 20px 10px 10px 30px;
    
 
 }
@@ -329,8 +328,8 @@ header i{
 #buttonmb{
     height: 60px;
     width: 60px;
-    margin-top: 8px;
-    margin-left: 73%;
+    padding: 10px;
+    margin: 1rem;
     background-color: #383651;
     border: 0;
     border-radius: 50%;
@@ -365,6 +364,7 @@ footer{
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    text-align: center;
     
     
 }
