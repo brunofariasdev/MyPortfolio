@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,11 @@
     <link rel="shortcut icon" href="./favicon.ico" />
     <script src="https://kit.fontawesome.com/2316327b96.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="spectre.min.css">
+
     <title>BrunoFarias</title>
 </head>
+
 <body>
     <main id="container">
 
@@ -20,132 +23,119 @@
                 <li><a href="#about" onclick="StartMenu()">Sobre</a></li>
                 <li><a href="#skills" onclick="StartMenu()">Skills</a></li>
                 <li><a href="#projetos" onclick="StartMenu()">Projetos</a></li>
-               
+
             </ul>
-
-            
-
         </div>
         <header id="menutop">
             <h1 id="logo">BF</h1>
             <ul id="btn-dsk">
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projetos" >Projetos</a></li>
-                
+                <li><a href="#projetos">Projetos</a></li>
+
             </ul>
-            <button  onclick="StartMenu()" id="btn-menu"><i class="fas fa-bars"></i></button>
-           
+            <button onclick="StartMenu()" id="btn-menu"><i class="fas fa-bars"></i></button>
+
         </header>
-        <section >
+        <section>
             <img class="img_redonda" src="src/perfil.jpg" alt="BrunoFarias">
             <h2>Bruno Farias</h2>
             <h3>Front-End Developer</h3>
         </section>
-       
-            <div id="icons">
-                <a href="https://github.com/brunofariasdev"><img src="src/icons8-octocat.svg" alt="GitHun"></a>
-                <a href="https://www.linkedin.com/in/bruno-oliveira-65a317194/"><img src="src/icons8-linkedin.svg" alt="Linkedin"></a>
-                <a href="https://twitter.com/BrunoDev2"><img src="src/icons8-twitter.svg" alt="Twitter"></a>
-                <a href="mailto:contato@brunofarias.net"><img src="src/3127770cd642badf706b32c16b3f2094.png" alt="Email"></a>
+
+        <div id="icons">
+            <a href="https://github.com/brunofariasdev"><img src="src/icons8-octocat.svg" alt="GitHun"></a>
+            <a href="https://www.linkedin.com/in/bruno-oliveira-65a317194/"><img src="src/icons8-linkedin.svg"
+                    alt="Linkedin"></a>
+            <a href="https://twitter.com/BrunoDev2"><img src="src/icons8-twitter.svg" alt="Twitter"></a>
+            <a href="mailto:contato@brunofarias.net"><img src="src/3127770cd642badf706b32c16b3f2094.png"
+                    alt="Email"></a>
+        </div>
+        <section id="about" id="secoes">
+            <h2>Sobre</h2>
+            <img class="img_redonda" src="src/undraw_code_review_l1q9.svg" alt="Sobre Svg">
+            <p>Desenvolvedor FrontEnd, apaixonado por tecnologia amante de JavaScript atualmente
+                disseminando o Vuejs por ai.<br> </p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <img id="imgSkill" src="src/undraw_static_assets_rpm6.svg" alt="JavaScript Html CSS lOGO">
+
+            <div id="btns">
+                <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                    alt="">
+                <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                    alt="">
+                <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"
+                    alt="">
+                <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+                    alt="">
+                <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
+                    alt="">
+                <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                    alt="">
+                <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"
+                    alt="">
+                <img src="https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D"
+                    alt="">
+                <img src="https://img.shields.io/badge/webpack%20-%238DD6F9.svg?&style=for-the-badge&logo=webpack&logoColor=black"
+                    alt="">
+                <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"
+                    alt="">
+                <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"
+                    alt="">
+                <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"
+                    alt="">
+                <img src="https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=white"
+                    alt="">
+                <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="">
+                <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                    alt="">
+                <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="">
+                <img src="https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white"
+                    alt="">
+
             </div>
 
+        </section>
 
-            <section id="about" id="secoes">
-               
-                <h2>Sobre</h2>
-                <img class="img_redonda" src="src/undraw_code_review_l1q9.svg" alt="Sobre Svg" >
-                <p>Desenvolvedor Web com foco no FrontEnd , apaixonado por tecnologia amante de JavaScript atualmente aprendendo ReactJs e Vuejs<br> </p>
-
-
-            </section>
-
-            <section id="skills" >
-                <h2>Skills</h2>
-                <img id="imgSkill" src="src/undraw_static_assets_rpm6.svg" alt="JavaScript Html CSS lOGO">
-
-                <div id="btns">
-
-                    <button class="btn-red">JavaScript</button>
-                    <button class="btn-red">Bootstrap 4</button>
-                    <button class="btn-red">Vuejs</button>
-                    <button class="btn-red">ReactJS</button>
-                 
+        <div id="projetos">
+            <h2>Principais Projetos</h2>
+            <div class="cards">
+                <div class="card"
+                    style="background-image: url('https://camo.githubusercontent.com/e703aff4cb734a40c9e5127ee2fa3a6eeb56e52d18f4531edb64a41ea549e7ab/68747470733a2f2f692e6962622e636f2f345a62663168542f6a6f78692d73637265656e73686f742d313630393236353933363238332e706e67');">
+                    <button>
+                        <a href="https://github.com/brunofariasdev/Spotify.com-Clone">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </button>
+                    <button>
+                        <a href="https://zealous-lichterman-fb968b.netlify.app/">
+                            Ver Projeto
+                        </a>
+                    </button>
                 </div>
-             
-            </section>
-
-           
-       
-        <div id="projetos" >
-            <h2>Projetos</h2>
-           
-            <div id="card">
-                
-                  
-                <div class="cards">
-                    <img id="imgspotify" src="src/spotify.png" alt="">
-                    <div id="btnscard">
-                        <button id="btnlogin" class="btn-pink"><a href="https://zealous-lichterman-fb968b.netlify.app">Ver Projeto</a></button>
-                            <a href="https://github.com/brunofariasdev/LayoutLogin">
-                                <img src="src/giticone.png" alt="Git Icone">
-                            </a>
-                    </div>
-                    
+                <div class="card"
+                    style="background-image: url('https://camo.githubusercontent.com/e88fe6550400d666588eba4e4fc5aeabb9ba13f73af20fc70ecfe3664058caff/68747470733a2f2f75706c6f61646465696d6167656e732e636f6d2e62722f696d616765732f3030332f3137352f3933342f66756c6c2f53637265656e73686f74253238322532392e706e673f31363137313831353030');">
+                    <button>
+                        <a href="https://github.com/brunofariasdev/SpotzCars">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </button>
+                    <button>
+                        <a href="https://github.com/brunofariasdev/SpotzCars">
+                            Ver Projeto
+                        </a>
+                    </button>
                 </div>
-                
-                <div class="cards">
-                    <img id="imgspotify" src="src/todo.png" alt="">
-                    <div id="btnscard">
-                        <button id="btnlogin" class="btn-pink"><a href="https://sharp-wiles-528463.netlify.app/">Ver Projeto</a></button>
-                            <a href="https://github.com/brunofariasdev/AppTodoJs">
-                                <img src="src/giticone.png" alt="Git Icone">
-                            </a>
-                    </div>
-                    
-                </div>
-
-                <div class="cards">
-                    <img id="imgspotify" src="src/matamosquito.png" alt="">
-                    <div id="btnscard">
-                        <button id="btnlogin" class="btn-pink"><a href="https://awesome-sammet-8bfffc.netlify.app/">Ver Projeto</a></button>
-                            <a href="https://github.com/brunofariasdev/MataMosquito">
-                                <img src="src/giticone.png" alt="Git Icone">
-                            </a>
-                    </div>
-                </div>
-
-                <div class="cards">
-                    <img id="imgspotify" src="https://raw.githubusercontent.com/brunofariasdev/Login-React/master/src/imgs/web.png" alt="">
-                    <div id="btnscard">
-                            <a href="https://github.com/brunofariasdev/Login-React">
-                                <img src="src/giticone.png" alt="Git Icone">
-                            </a>
-                    </div>
-                </div>
-
-                <div class="cards">
-                    <img id="imgspotify" src="https://raw.githubusercontent.com/brunofariasdev/easybank/main/src/images/desk.png" alt="">
-                    <div id="btnscard">
-                        <button id="btnlogin" class="btn-pink"><a href="https://zen-jennings-831a9c.netlify.app/">Ver Projeto</a></button>
-                            <a href="https://github.com/brunofariasdev/Login-React">
-                                <img src="src/giticone.png" alt="Git Icone">
-                            </a>
-                    </div>
-                </div>
-
-                
-            </div> 
-        </div>
-           
-
-        <footer>
-            BrunoFarias © Copyright - Todos os direitos reservados
-        </footer>
-
-
+            </div>
+            <h3>Veja Mais Projetos no meu <a href="https://github.com/brunofariasdev">GitHub</a></h3>
     </main>
-        
+    <footer>
+        BrunoFarias © Copyright - Todos os direitos reservados
+    </footer>
     <script src="script/index.js"></script>
 </body>
+
 </html>
